@@ -4,6 +4,8 @@ import { FlatList, Text, StyleSheet, TouchableOpacity } from "react-native";
 import setCourses from "../../../Hooks/setCourses";
 
 import { colorsFilter } from "../../../style/colors";
+import Button from "../../../Componentes/button";
+//import RandomCor from "../../../Componentes/randomColor";
 
 // Embaralha a lista de cores
 const shuffledColors = [...colorsFilter.list].sort(() => 0.5 - Math.random());
@@ -20,9 +22,12 @@ const CategoryFilter = () => {
     const colorValue = Object.values(buttonColors[index])[0];
 
     return (
-      <TouchableOpacity style={[styles.button, { backgroundColor: colorValue }]} onPress={ () => console.log('teste ok')}>
-        <Text style={styles.buttonText}>{name}</Text>
-      </TouchableOpacity>
+      <Button 
+      pressed = {() => console.log('teste label')}
+      label={name}
+      backGround={colorValue}
+      >
+      </Button>
     );
   };
 
@@ -37,24 +42,6 @@ const CategoryFilter = () => {
   );
 }; 
 
-const styles = StyleSheet.create({
-  button: {
-    width: 116,
-    height: 32,
-    borderRadius: 12,
-    alignItems: "center",
-    justifyContent: "center",
-    marginRight: 16,
-    marginLeft: 6,
-    marginTop: 28,
-    marginBottom: 28,
-  },
-  buttonText: {
-    color: "#FFF",
-    fontSize: 16,
-    lineHeight: 18.75,
-  },
-});
 
 export default CategoryFilter;
 

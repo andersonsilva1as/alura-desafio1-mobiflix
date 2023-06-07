@@ -3,10 +3,10 @@ import { StyleSheet, View } from "react-native";
 
 import Header from "./components/header";
 
+import { myColors } from "../../style/colors";
 import CategoryFilter from "./components/categoryfilter";
-import { colorsFilter } from "../../style/colors";
 import Banner from "./components/banner";
-
+import Card from "./components/card";
 
 export default function Home(){
     return (
@@ -14,6 +14,7 @@ export default function Home(){
         <Header/>
         <Banner/>
         <CategoryFilter/>
+        <Card/>
     </View>
     )
 }
@@ -21,6 +22,6 @@ export default function Home(){
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: colorsFilter.veryDarkGreyBlack
+        backgroundColor: myColors.veryDarkGrey
     }
 })
