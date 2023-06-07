@@ -23,13 +23,3 @@ export const colorsFilter = {
         {veryDarkGreyBlack: '#1A1A1A'},
     ]
 }
-export const colorsFilter2 = [
-    '\'#275FA3\'',
-    '\'#2478DF\'',
-    '\'#5781EF\'',
-    '\'#7B61FF\'',
-    '\'#19940F\'',
-    '\'#D82D2D\'',
-    '\'#222222\'',
-    '\'#1A1A1A\'',
-]
