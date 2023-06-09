@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FlatList, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { FlatList } from "react-native";
 
 import setCourses from "../../../Hooks/setCourses";
 

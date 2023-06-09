@@ -7,7 +7,7 @@ export default function Banner(){
     return(
         <View style = {styles.container}>
             <Image source={imgBanner} style = {styles.imageBanner}/>
-            <TouchableOpacity style = {styles.buttonBanner} onPress={() => console.log('teste ok')}>
+            <TouchableOpacity style = {styles.buttonBanner} onPress={() => console.log('teste banner')}>
                 <Text style = {styles.textButtonBanner}>Assista Agora</Text>
             </TouchableOpacity>
         </View>
